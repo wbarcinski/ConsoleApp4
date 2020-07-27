@@ -19,6 +19,7 @@ namespace Pluralsight.BegCShCollections.TopTenPops
 			{
 				Console.WriteLine($"{PopulationFormatter.FormatPopulation(country.Population).PadLeft(15)}: {country.Name}");
 			}
+            Console.WriteLine($"Total Countries count is: {countries.Count}");
 			Console.ReadKey();
 		}
 	}
