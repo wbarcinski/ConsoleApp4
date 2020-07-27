@@ -17,6 +17,7 @@ namespace Pluralsight.BegCShCollections.TopTenPops
 			Country lilliput = new Country("Liliput","LIL","Somwhere",2000000);
 			int lilliputIndex = countries.FindIndex(country=>country.Population < 2000000);
 			countries.Insert(lilliputIndex, lilliput);
+			countries.RemoveAt(lilliputIndex);
 
 			foreach (Country country in countries)
 			{
