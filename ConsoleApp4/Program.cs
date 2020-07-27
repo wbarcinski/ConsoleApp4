@@ -14,6 +14,7 @@ namespace Pluralsight.BegCShCollections.TopTenPops
 			CsvReader reader = new CsvReader(filePath);
 
 			List<Country> countries = reader.ReadAllCountries();
+			Country lilliput = new Country("Liliput","LIL","Somwhere",2000000);
 
 			foreach (Country country in countries)
 			{
